@@ -1,0 +1,103 @@
+<div id="wdqs-capture-panel">
+    <div class="wdqs-cap-hdr">
+        <div class="wdqs-cap-hdr-left">
+            <div class="wdqs-cap-title">WDQS Capture</div>
+            <div class="wdqs-cap-sub">Transform • dedupe • upload • copy/download</div>
+        </div>
+
+        <div class="wdqs-cap-hdr-actions">
+            <button class="wdqs-cap-tall" title="Toggle tall panel" aria-label="Toggle tall panel">
+                <span class="wdqs-cap-tall-ic">⤢</span>
+            </button>
+
+            <button class="wdqs-cap-toggle" title="Collapse/Expand" aria-label="Collapse/Expand">
+                <span class="wdqs-cap-toggle-ic">▾</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="wdqs-cap-status" data-kind="idle">Idle</div>
+
+    <!-- Capture-time progress (fetch/xhr) -->
+    <div class="wdqs-cap-capprogress is-slot">
+        <div class="wdqs-cap-capprogresstxt">Gathering…</div>
+        <div class="wdqs-cap-capprogressbar"><span></span></div>
+    </div>
+
+    <div class="wdqs-cap-body">
+        <div class="wdqs-cap-row">
+            <label class="wdqs-cap-lbl">Name</label>
+            <input class="wdqs-cap-name" placeholder="optional filename prefix" />
+        </div>
+
+        <div class="wdqs-cap-row wdqs-cap-row-tight">
+            <label class="wdqs-cap-chk">
+                <input type="checkbox" class="wdqs-cap-full" />
+                Store full JSON responses (bigger files)
+            </label>
+        </div>
+
+        <!-- Export options -->
+        <div class="wdqs-cap-row wdqs-cap-row-tight">
+            <label class="wdqs-cap-chk">
+                <input type="checkbox" class="wdqs-cap-img" />
+                Fetch images on export (P18)
+            </label>
+        </div>
+
+        <div class="wdqs-cap-row wdqs-cap-row-tight">
+            <label class="wdqs-cap-chk">
+                <input type="checkbox" class="wdqs-cap-img-uniq" />
+                Create unique images CSV (imageId mapping)
+            </label>
+        </div>
+
+        <!-- Export-time progress -->
+        <div class="wdqs-cap-progress is-slot">
+            <div class="wdqs-cap-progresstxt">Working…</div>
+            <div class="wdqs-cap-progressbar"><span></span></div>
+        </div>
+
+        <div class="wdqs-cap-stats">
+            <div><span class="k">Nodes</span> <span class="v wdqs-cap-captures">0</span></div>
+            <div><span class="k">Unique</span> <span class="v wdqs-cap-qids">0</span></div>
+        </div>
+
+        <div class="wdqs-cap-row wdqs-cap-row-tight">
+            <label class="wdqs-cap-chk">
+                <input type="checkbox" class="wdqs-cap-tree-on" />
+                Show tree summary on node click
+            </label>
+        </div>
+
+        <div class="wdqs-cap-tree-wrap is-hidden">
+            <div class="wdqs-cap-tree-h">Tree summary</div>
+            <div class="wdqs-cap-tree-box">Click an acquired Q-node link in WDQS.</div>
+        </div>
+
+        <div class="wdqs-cap-actions">
+            <button class="wdqs-btn wdqs-btn-copy">Copy JSON</button>
+            <button class="wdqs-btn wdqs-btn-dl">Download JSON</button>
+
+            <button class="wdqs-btn wdqs-btn-csv-nodes">Download Nodes CSV (UTF-8)</button>
+            <button class="wdqs-btn wdqs-btn-csv-props">Download Properties CSV (UTF-8)</button>
+            <button class="wdqs-btn wdqs-btn-csv-links">Download Links CSV (UTF-8)</button>
+
+            <button class="wdqs-btn wdqs-btn-xlsx">Download XLSX (Sheets)</button>
+
+            <label class="wdqs-btn wdqs-btn-up">
+                Upload JSON
+                <input class="wdqs-file" type="file" accept="application/json,.json" hidden />
+            </label>
+
+            <button class="wdqs-btn wdqs-btn-clear">Clear</button>
+        </div>
+
+        <div class="wdqs-cap-preview-wrap">
+            <div class="wdqs-cap-preview-h">Live preview (last capture)</div>
+            <pre class="wdqs-cap-preview">{}</pre>
+        </div>
+
+        <div class="wdqs-cap-foot">Tip: drag the bottom edge to resize height.</div>
+    </div>
+</div>
