@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         WikiData QIDS Capture Panel v8
 // @namespace    myNamespace
-// @version      2.8.0
+// @version      2.8
 // @match        https://query.wikidata.org/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_download
 // @grant        GM_getResourceText
-// @resource     PANEL_HTML https://raw.githubusercontent.com/a-mccutchan87/wdqs-tampermonkey-panel/main/wdqs-panel.html
-// @resource     PANEL_CSS  https://raw.githubusercontent.com/a-mccutchan87/wdqs-tampermonkey-panel/main/wdqs-panel.css
-// @require https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js
+// @resource     PANEL_HTML https://raw.githubusercontent.com/a-mccutchan87/wdqs-tampermonkey-panel/refs/heads/main/wdqs-panel.html
+// @resource     PANEL_CSS  https://raw.githubusercontent.com/a-mccutchan87/wdqs-tampermonkey-panel/refs/heads/main/wdqs-panel.css
+// @require      https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js
 // ==/UserScript==
 
 /* ---------------------------
